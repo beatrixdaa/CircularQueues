@@ -80,6 +80,28 @@ namespace CircularQueues
                     FRONT = FRONT + 1;
             }
         }
+        public void display()
+        {
+            int FRONT_position = FRONT;
+            int REAR_position = REAR;
+            /*Checks if the queue is empty. */
+            if (FRONT == -1)
+            {
+                Console.WriteLine("Queue is empty\n");
+                return;
+            }
+            Console.WriteLine("\nElement in the queue are..........................\n");
+            if (FRONT_position <= REAR_position)
+            {
+                /* traverse the queue till the last element present in an array.
+                */
+                while (FRONT_position <= REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + " ");
+                    FRONT_position++;
+                }
+            }
+        }
     }
 }
    
