@@ -21,7 +21,17 @@ namespace CircularQueues
         public void insert(int element)
         {
             /* This statment check for the overflow condition. */
-
+            if ((FRONT == 0 && REAR == max -1) || (FRONT == REAR + 1))
+            {
+                Console.WriteLine("\nQueue overflow\n");
+                return;
+            }
+            /* The following statment checks whether the queue is empty. if the\* queue is
+             * *empty, then the value of the REAR and FRONT variables is set to 0.*/
+            if (FRONT ==-1)
+            { 
+                
+            }
         }
     }
 }
