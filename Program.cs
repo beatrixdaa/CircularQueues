@@ -100,6 +100,49 @@ namespace CircularQueues
                     Console.Write(queue_array[FRONT_position] + " ");
                     FRONT_position++;
                 }
+                Console.WriteLine();
+            }
+            else
+            {
+                /* traverse the queue till the last position of the array. */
+                while (FRONT_position <= max - 1)
+                {
+                   Console.Write(queue_array[FRONT_position] + " ");
+                   FRONT_position++;
+                }
+                /* set the FRONT position to the first element array.*/
+                FRONT_position = 0;
+                /* traverse the array till the last element present in the
+                * queue. */
+                while (FRONT_position <= REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + "  ");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
+            }
+        }
+        static void Main (string[] args)
+        {
+            Queues q = new Queues();
+            char ch;
+            while(true)
+            {
+                try
+                {
+                    Console.WriteLine("Menu");
+                    Console.WriteLine("1.Implement insert operation");
+                    Console.WriteLine("2.Implement delete operation");
+                    Console.WriteLine("3.Display values");
+                    Console.WriteLine("4.Exit");
+                    Console.Write("\nEnter your choice (1-4): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch(ch)
+                    {
+
+                    }
+                }
             }
         }
     }
