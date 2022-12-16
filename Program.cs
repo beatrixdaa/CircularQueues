@@ -8,6 +8,7 @@ namespace CircularQueues
 {
     class Queues
     {
-        int 
+        int FRONT, REAR, max = 5;
+        int[] queue_array = new int[5];
     }
 }
